@@ -1,0 +1,46 @@
+[
+    {
+        "text": "Salut moi c'est chat ! ça va ?",
+        "answers": [
+            {
+                "answersA": ["Non", "No", "Pas du tout", "Pas vraiment", "Absolument pas"],
+                "answersB": ["Oui", "Yes", "Grave", "Trop", "Ouais", "Absolument", "Bien"]
+            }
+        ],
+        "nextA": 1,
+        "nextB": 2
+    },
+    {
+        "text": "Ho nooon, c'est triste ça !",
+        "answers": [
+            {
+                "answersA": ["Bla"],
+                "answersB": ["Blu"]
+            }
+        ],
+        "nextA": 2,
+        "nextB": 2
+    },
+    {
+        "text": "Cool ça !",
+        "answers": [
+            {
+                "answersA": [""],
+                "answersB": ["Oui", "Yes", "Grave", "Trop", "Ouais", "Absolument", "Bien"]
+            }
+        ],
+        "nextA": 1,
+        "nextB": 1
+    },
+    {
+        "text": "Bon bah moi je vais manger, à plus !",
+        "answers": [
+            {
+                "answersA": ["Non", "No", "Pas du tout", "Pas vraiment", "Absolument pas"],
+                "answersB": ["Oui", "Yes", "Grave", "Trop", "Ouais", "Absolument", "Bien"]
+            }
+        ],
+        "nextA": 0,
+        "nextB": 0
+    }
+]
