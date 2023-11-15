@@ -1,6 +1,6 @@
 [
     {
-        "text": "Salut moi c'est chat ! ça va le sang ? raconte moi un peu... ça va ? Ou ça va pas ????",
+        "text": "Imaginons qu’une rédaction, mal avisée, <br/><br/> exploite un générateur de texte IA pour inventer une histoire sensationnelle, prétendant que les pingouins ont soudainement déclaré la guerre à l'humanité. La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique. Les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive. Cette situation inquiète peut-être dans le futur de l’information et de la confiance accordée aux médias, êtes vous inquiet ? Ecrire : “Inquiet” ou “pas vraiment” ",
         "answers": [
             {
                 "answersA": ["Non", "No", "Pas du tout", "Pas vraiment", "Absolument pas"],
