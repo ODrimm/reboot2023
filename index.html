@@ -21,15 +21,22 @@
             </div>
         </div>
         <div class="account">
-            <div>
-                <p class="chat-account"> Il était un petit navire </p>
+            <div class="profil">
+                <p class="logo-account"> MMI </p>
+                <p class="name-account"> MMI Bordeaux </p>
             </div>
         </div>
     </div>
     <div class="right-side">
-        <section id="Chat"> Ratio </section>
-        <form onkeydown="return event.key != 'Enter';">
-            <input type="text" name="text" id="TextSubmit" width="80%">
+        <section id="Chat">
+            
+        </section>
+
+    <div>
+        <form onkeydown="
+            if(event.key == 'Enter'){clickEvent()}
+            return event.key != 'Enter';">
+            <input type="text" name="text" id="TextSubmit" width="80%" autocomplete="off">
             <div>
                 <button class="button-response" type="button" onclick="clickEvent()">
                     <img src="ressources/submitIcon.png" alt="send querry" />
@@ -37,8 +44,8 @@
             </div>
         </form>
         <p class="bottom-text">ChatGPT can make mistakes. Consider checking important information.</p>
-
     </div>
+
 </body>
 
 </html>

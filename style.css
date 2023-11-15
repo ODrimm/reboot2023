@@ -8,11 +8,14 @@
 html {
     font-family: Inter;
     background: #343541;
+    color: white;
 }
 
 body {
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    align-items: flex-end;
 }
 
 .left-side {
@@ -42,7 +45,8 @@ body {
 
     order: 1;
 }
-.chat-create{
+
+.chat-create {
     padding-top: 10%;
     color: #CDCED7;
     box-sizing: border-box;
@@ -52,6 +56,7 @@ body {
     width: 220px;
     height: 5vh;
     align-items: center;
+    
 }
 
 .history {
@@ -66,6 +71,12 @@ body {
 .account {
 
     order: 3;
+}
+
+.profil{
+    display: flex;
+    flex-direction: row;
+    justify-content: spe;
 }
 
 .input {
@@ -88,21 +99,34 @@ input[type="text" i] {
 
 }
 
-.button-response{
+.button-response {
     border-radius: 14px;
     background-color: #19C37D;
 }
 
-.right-side bottom-text{
+.right-side bottom-text {
     color: white;
 }
 
-.button-div{
+.button-div {
     height: 100%;
     width: 100%;
-    
+
 }
 
-#TextSubmit{
+#TextSubmit {
     background-color: #67606E;
+    width: 700px;
+    border-radius: 10px 0 0 10px;
 }
+
+.chatGPT {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #444654;
+}
+
+input[type=text] {
+    color: white;
+}
+
