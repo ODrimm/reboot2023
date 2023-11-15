@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: row;
+}
+
+.barre-lateral-gauche{
+    background-color: black;
+    margin: auto;
+    .overflow-hidden {
+        overflow: hidden;
+    }
+}
+
+.barre-lateral-droite{
+    background-color: #524B59;
+    margin: auto;
+}
