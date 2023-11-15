@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
+
+@font-face {
+    font-family: 'Inter', sans-serif;
+}
+
+
+html {
+    font-family: Inter;
+    background: #343541;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side {
+    background-color: #202123;
+    color: #CDCED7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    min-height: 100vh;
+    width: 244px;
+}
+
+.right-side {
+    background-color: #343541;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.create {
+
+    flex-shrink: 0;
+    text-align: center;
+
+    order: 1;
+}
+.chat-create{
+    padding-top: 10%;
+    color: #CDCED7;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #877E91;
+    background: #1C1B1C;
+    width: 220px;
+    height: 5vh;
+    align-items: center;
+}
+
+.history {
+    /* display: flex;
+    justify-content: start;
+    padding-top: 100px;*/
+    order: 2;
+    flex-grow: 5;
+    min-height: auto;
+}
+
+.account {
+
+    order: 3;
+}
+
+.input {
+    border: none;
+    padding: none;
+}
+
+input[type="text" i] {
+    padding: 0px;
+}
+
+.right-side form {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 14px;
+    box-sizing: border-box;
+    background: #67606E;
+    width: 700px;
+    flex-shrink: 0;
+
+}
+
+.button-response{
+    border-radius: 14px;
+    background-color: #19C37D;
+}
+
+.right-side bottom-text{
+    color: white;
+}
+
+.button-div{
+    height: 100%;
+    width: 100%;
+    
+}
+
+#TextSubmit{
+    background-color: #67606E;
+}

@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
 </head>
+
 <body>
-    <h1>hello</h1>
+    <div class="left-side">
+        <div class="create">
+            <button class="chat-create"> + Nouveau chat </button>
+        </div>
+        <div class="history">
+            <div>
+                <p class="chat-history"> Il était un petit navire </p>
+            </div>
+        </div>
+        <div class="account">
+            <div>
+                <p class="chat-account"> Il était un petit navire </p>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <section id="Chat"> Ratio </section>
+        <form onkeydown="return event.key != 'Enter';">
+            <input type="text" name="text" id="TextSubmit" width="80%">
+            <div>
+                <button class="button-response" type="button" onclick="clickEvent()">
+                    <img src="ressources/submitIcon.png" alt="send querry" />
+                </button>
+            </div>
+        </form>
+        <p class="bottom-text">ChatGPT can make mistakes. Consider checking important information.</p>
+
+    </div>
 </body>
+
 </html>
