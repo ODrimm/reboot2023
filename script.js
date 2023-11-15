@@ -36,6 +36,8 @@ function chatSpeak(text) {
         const chats = document.getElementsByClassName("chatGPT");
         const currentChat = chats[chats.length - 1];
         currentChat.innerHTML = currentChat.innerHTML + textToAdd;
+        currentChat.scrollIntoView({ behavior: "smooth" });
+
         textPos = random;
         if (textPos > text.length) {
             clearInterval(interval);
@@ -47,6 +49,8 @@ function chatSpeak(text) {
 function userSpeak(text) {
     //les lettres apparaissent une par une
     chat.innerHTML = chat.innerHTML + '<section class="chatItem"><section class="chatUser">' + text + "</section></section>";
+    const userChats = document.getElementsByClassName("chatUser");
+    userChats[userChats.length - 1].scrollIntoView({ behavior: "smooth" });
 }
 
 function searchAnswear(extracted) { // Search for keywords in the extracted text
