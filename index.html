@@ -29,21 +29,25 @@
     </div>
     <div class="right-side">
         <section id="Chat">
-            
+            <section class="chatItem chatTitle">
+                Default (GPT-3.5)
+            </section>
         </section>
-
-    <div>
-        <form onkeydown="
+        <section class="chatUi">
+            <form onkeydown="
             if(event.key == 'Enter'){clickEvent()}
             return event.key != 'Enter';">
-            <input type="text" name="text" id="TextSubmit" width="80%" autocomplete="off">
-            <div>
-                <button class="button-response" type="button" onclick="clickEvent()">
-                    <img src="ressources/submitIcon.png" alt="send querry" />
-                </button>
-            </div>
-        </form>
-        <p class="bottom-text">ChatGPT can make mistakes. Consider checking important information.</p>
+                <section class="formWrapper">
+                    <input placeholder="Envoyez un message" type="text" name="text" id="TextSubmit" autocomplete="off">
+                </section>
+                <div>
+                    <button class="button-response" type="button" onclick="clickEvent()">
+                        <img src="ressources/submitIcon.png" alt="send querry" />
+                    </button>
+                </div>
+            </form>
+            <p class="bottom-text">ChatGPT can make mistakes. Consider checking important information.</p>
+        </section>
     </div>
 
 </body>

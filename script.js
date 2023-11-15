@@ -10,9 +10,11 @@ loadJSONData(); // Load data from JSON file
 function clickEvent() { // When the user clicks on the submit button
     if (canSubmit) {
         canSubmit = false;
-        let extracted = textSubmit.value.toLowerCase();
+        let userMessage = textSubmit.value;
+        let extracted = userMessage.toLowerCase();
+        textSubmit.value = "";
         let answear = searchAnswear(extracted);
-        userSpeak(textSubmit.value);
+        userSpeak(userMessage);
         if (answear != null) {
             chatSpeak(data[currentQuestion].text);
         } else {
@@ -25,7 +27,7 @@ function chatSpeak(text) {
     let textPos = 0;
     const interval = setInterval(chatDisplay, getRandomInt(50, 150));
 
-    chat.innerHTML = chat.innerHTML + '<section id="question' + currentQuestion + '" class="chatGPT"></section>';
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
     function chatDisplay() { //les lettres apparaissent une par une
 
@@ -37,17 +39,14 @@ function chatSpeak(text) {
         textPos = random;
         if (textPos > text.length) {
             clearInterval(interval);
+            canSubmit = true;
         }
     }
-
-    setTimeout(() => {
-        canSubmit = true;
-    }, 1000);
 }
 
 function userSpeak(text) {
     //les lettres apparaissent une par une
-    chat.innerHTML = chat.innerHTML + '<section class="chatUser">' + text + "</section>";
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem"><section class="chatUser">' + text + "</section></section>";
 }
 
 function searchAnswear(extracted) { // Search for keywords in the extracted text
@@ -80,7 +79,7 @@ async function loadJSONData() { //Load data from JSON file
     const response = await fetch("story.json");
     const jsonData = await response.json();
     data = jsonData;
-    chat.innerHTML = '<section class="chatGPT">' + data[currentQuestion].text + "</section>";
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><section class="chatGPT">' + data[currentQuestion].text + "</section></section>";
 }
 
 function getRandomInt(min, max) {
