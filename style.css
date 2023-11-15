@@ -20,12 +20,10 @@ body {
     color: #CDCED7;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 100px;
     min-height: 100vh;
-    width: 20vw;
 }
 
 .create {
@@ -37,36 +35,38 @@ body {
 }
 
 .chat-create {
-    padding-top: 10%;
     color: #CDCED7;
     box-sizing: border-box;
     border-radius: 9px;
     border: 1px solid #877E91;
     background: #1C1B1C;
-    width: 220px;
-    height: 5vh;
+    width: 150px;
+    height: 50px;
     align-items: center;
-
 }
 
 .history {
-    /* display: flex;
+    display: flex;
     justify-content: start;
-    padding-top: 100px;*/
+    padding-left: 1vw;
     order: 2;
     flex-grow: 5;
     min-height: auto;
 }
 
 .account {
-
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 15vw;
+    justify-content: space-around;
     order: 3;
 }
 
 .profil {
     display: flex;
     flex-direction: row;
-    justify-content: spe;
+    justify-content: space-around;
 }
 
 .input {
@@ -202,4 +202,47 @@ input[type=text] {
 .create-chat {
     align-self: center;
     align-items: flex-start;
+}
+
+.header-left {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 15vw;
+    justify-content: space-around;
+}
+
+.tab {
+    color: #CDCED7;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #877E91;
+    background: #1C1B1C;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+}
+
+.logo-account{
+    display: flex;
+    color: #000000;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #ECDE63;
+    background: #ECDE63;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.account{
+    padding-bottom: 2vw;
+    display: flex;
+}
+
+.name-account{
+    display: flex;
+    align-items: center;
 }
