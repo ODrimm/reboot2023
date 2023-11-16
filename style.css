@@ -184,6 +184,19 @@ input[type=text] {
 .chatItem.chatTitle {
     height: 2.5vh;
     font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.chatTitle p{
+    font-size: 0.75rem;
+    opacity: 0.3;
 }
 
 #Chat {
