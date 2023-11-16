@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
 @font-face {
     font-family: 'Inter', sans-serif;
 }
@@ -46,8 +47,8 @@ body {
 }
 
 
-.chat-history{
-        color: #CDCED7;
+.chat-history {
+    color: #CDCED7;
     box-sizing: border-box;
     border-radius: 9px;
     border: 1px solid #877E91;
@@ -107,7 +108,7 @@ input[type="text" i] {
     background-color: transparent;
 }
 
-.button-response img{
+.button-response img {
     opacity: 70%;
 }
 
@@ -132,7 +133,7 @@ input[type="text" i] {
     color: rgba(255, 255, 255, 0.481);
 }
 
-#TextSubmit::placeholder{
+#TextSubmit::placeholder {
     color: rgba(255, 255, 255, 0.519);
 }
 
@@ -180,7 +181,7 @@ input[type=text] {
     align-items: center;
 }
 
-.chatItem img{
+.chatItem img {
     border-radius: 10%;
     width: 2rem;
     margin-right: 1rem;
@@ -202,13 +203,13 @@ input[type=text] {
     align-items: center;
 }
 
-.chatHeader{
+.chatHeader {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
 }
 
-.chatTitle p{
+.chatTitle p {
     font-size: 0.75rem;
     opacity: 0.3;
 }
@@ -227,15 +228,15 @@ input[type=text] {
     display: none;
 }
 
-.chatBackground{
+.chatBackground {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%)  translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
     opacity: 0.4;
 }
 
-.formWrapper{
+.formWrapper {
     border-radius: 10px 0 0 10px;
     width: 100%;
     height: 3rem;
@@ -269,6 +270,7 @@ input[type=text] {
     height: 50px;
     align-items: center;
 }
+
 .tab2 {
     color: #CDCED7;
     box-sizing: border-box;
@@ -286,7 +288,7 @@ input[type=text] {
     font-size: 1vw;
 }
 
-.logo-account{
+.logo-account {
     display: flex;
     color: #000000;
     box-sizing: border-box;
@@ -300,14 +302,14 @@ input[type=text] {
     font-size: 1.5vw;
 }
 
-.name-account{
+.name-account {
     display: flex;
     align-items: center;
     margin-left: 2vw;
     font-size: 1.5vw;
 }
 
-.history{
+.history {
     padding-top: 10px;
     display: flex;
     padding-left: 1vw;
@@ -319,26 +321,45 @@ input[type=text] {
     .left-side {
         display: none;
     }
-    .right-side{
+
+    .right-side {
         min-width: 100vw;
     }
 }
 
-.today{
+.today {
     color: #666666;
     font-weight: 800;
     margin-top: 2vw;
 }
 
-.body div div{
+.body div div {
     display: flex;
     justify-content: flex-start;
 }
 
-.today-history{
+.today-history {
     min-width: 20vw;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.blocked {
+    cursor: not-allowed;
+}
+
+.chatInfo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.5;
+    width: 80%;
+    transition: all 0.5s;
+}
+
+.hidden{
+    opacity: 0;
 }

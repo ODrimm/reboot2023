@@ -1,5 +1,6 @@
 let data = [];
 let currentQuestion = 0;
+let lastQuestion;
 let canSubmit = true;
 
 const chat = document.getElementById('Chat');
@@ -30,7 +31,6 @@ function chatSpeak(text) {
     chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
     function chatDisplay() { //les lettres apparaissent une par une
-
         let random = getRandomInt(textPos, textPos + 8);
         let textToAdd = text.slice(textPos, random);
         const chats = document.getElementsByClassName("chatGPT");
@@ -50,6 +50,10 @@ function chatSpeak(text) {
         if (textPos > text.length) {
             clearInterval(interval);
             canSubmit = true;
+            if(currentQuestion >= lastQuestion){
+                textSubmit.classList.add("blocked");
+                console.log("blocker")
+            }
         }
     }
 }
@@ -91,6 +95,7 @@ async function loadJSONData() { //Load data from JSON file
     const response = await fetch("story.json");
     const jsonData = await response.json();
     data = jsonData;
+    lastQuestion = data.length - 1;
 }
 
 function getRandomInt(min, max) {
