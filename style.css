@@ -26,10 +26,8 @@ body {
 }
 
 .create {
-
     flex-shrink: 0;
     text-align: center;
-
     order: 1;
 }
 
