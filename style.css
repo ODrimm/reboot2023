@@ -240,7 +240,7 @@ input[type=text] {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-padding-left: 20px;
+    padding-left: 20px;
     justify-content: space-around;
 }
 
