@@ -83,7 +83,7 @@ async function loadJSONData() { //Load data from JSON file
     const response = await fetch("story.json");
     const jsonData = await response.json();
     data = jsonData;
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section class="chatCPT">' + data[currentQuestion].text + "</section></section>";
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section class="chatGPT">' + data[currentQuestion].text + "</section></section>";
 }
 
 function getRandomInt(min, max) {
