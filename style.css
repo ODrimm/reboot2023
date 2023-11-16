@@ -171,6 +171,7 @@ input[type=text] {
 }
 
 .chatItem {
+    z-index: 2;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -231,6 +232,7 @@ input[type=text] {
     left: 50%;
     top: 50%;
     transform: translateX(-50%)  translateY(-50%);
+    opacity: 0.4;
 }
 
 .formWrapper{
