@@ -27,7 +27,7 @@ function chatSpeak(text) {
     let textPos = 0;
     const interval = setInterval(chatDisplay, getRandomInt(50, 150));
 
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.jpg" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.png" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
     function chatDisplay() { //les lettres apparaissent une par une
 
@@ -83,7 +83,7 @@ async function loadJSONData() { //Load data from JSON file
     const response = await fetch("story.json");
     const jsonData = await response.json();
     data = jsonData;
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.jpg" /><section class="chatGPT">' + data[currentQuestion].text + "</section></section>";
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.png" /><section class="chatGPT">' + data[currentQuestion].text + "</section></section>";
 }
 
 function getRandomInt(min, max) {

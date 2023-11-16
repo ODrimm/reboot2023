@@ -22,7 +22,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 100px;
+    gap: 150px;
+    min-width: 20vw;
     min-height: 100vh;
 }
 
@@ -146,7 +147,7 @@ input[type=text] {
     align-content: flex-end;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
+    width: 80vw;
 }
 
 .chatUi {
@@ -171,7 +172,6 @@ input[type=text] {
     width: 2rem;
     margin-right: 1rem;
     aspect-ratio: 1;
-    background-color: white;
 }
 
 .chatItem.gpt {
@@ -216,7 +216,7 @@ input[type=text] {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    width: 15vw;
+    width: 20vw;
     justify-content: space-around;
 }
 
@@ -253,4 +253,13 @@ input[type=text] {
 .name-account{
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .left-side {
+        display: none;
+    }
+    .right-side{
+        min-width: 100vw;
+    }
 }
