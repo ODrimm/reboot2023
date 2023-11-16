@@ -25,7 +25,7 @@ function clickEvent() { // When the user clicks on the submit button
 
 function chatSpeak(text) {
     let textPos = 0;
-    const interval = setInterval(chatDisplay, getRandomInt(50, 150));
+    const interval = setInterval(chatDisplay, getRandomInt(50, 100));
 
     chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.png" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
@@ -35,10 +35,18 @@ function chatSpeak(text) {
         let textToAdd = text.slice(textPos, random);
         const chats = document.getElementsByClassName("chatGPT");
         const currentChat = chats[chats.length - 1];
-        currentChat.innerHTML = currentChat.innerHTML + textToAdd;
-        currentChat.scrollIntoView({ behavior: "smooth" });
+        if (textToAdd.includes("<") || textToAdd.includes(">")) {
+            if (textToAdd.includes("<br/>") || textToAdd.includes("<b>") || textToAdd.includes("</b>")){
+                currentChat.innerHTML = currentChat.innerHTML + textToAdd;
+                currentChat.scrollIntoView({ behavior: "smooth" });
+                textPos = random;
+            }
+        } else {
+            currentChat.innerHTML = currentChat.innerHTML + textToAdd;
+            currentChat.scrollIntoView({ behavior: "smooth" });
+            textPos = random;
+        }
 
-        textPos = random;
         if (textPos > text.length) {
             clearInterval(interval);
             canSubmit = true;
@@ -83,7 +91,6 @@ async function loadJSONData() { //Load data from JSON file
     const response = await fetch("story.json");
     const jsonData = await response.json();
     data = jsonData;
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.png" /><section class="chatGPT">' + data[currentQuestion].text + "</section></section>";
 }
 
 function getRandomInt(min, max) {

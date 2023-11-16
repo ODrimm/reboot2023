@@ -1,10 +1,21 @@
-[
+[ 
     {
-        "text": "Imaginons qu’une rédaction, mal avisée, <br/><br/> exploite un générateur de texte IA pour inventer une histoire sensationnelle, prétendant que les pingouins ont soudainement déclaré la guerre à l'humanité. La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique. Les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive. Cette situation inquiète peut-être dans le futur de l’information et de la confiance accordée aux médias, êtes vous inquiet ? Ecrire : “Inquiet” ou “pas vraiment” ",
+        "text": "",
         "answers": [
             {
-                "answersA": ["Non", "No", "Pas du tout", "Pas vraiment", "Absolument pas"],
-                "answersB": ["Oui", "Yes", "Grave", "Trop", "Ouais", "Absolument", "Bien"]
+                "answersA": [""],
+                "answersB": [""]
+            }
+        ],
+        "nextA": 1,
+        "nextB": 1
+    },
+    {
+        "text": "Avez-vous vraiment besoin de savoir cela ?   <br/>     <br/>     Je comprends votre question, mais chaque interaction demande de l'énergie, même dans le monde numérique, comme avec nous deux en ce moment, par exemple. <br/>  Si on veut réduire notre impact écologique, on peut essayer de maximiser la valeur de chaque échange.  <br/>   <br/>   Peut-être pourrions nous discuter de quelque chose de plus significatif comme l’impact de mon utilisation dans le monde ? Voulez vous en discuter ?   <br/>   <br/>   En fait, peut m’importe, je vais vous expliquer.    <br/>    Préférez-vous que je vous parle de DÉPENSE ÉNERGÉTIQUE ou des QUANTITÉS D’EAU que je consomme ?",
+        "answers": [
+            {
+                "answersA": ["Dépense", "énérgétique", "energetique", "Depense", "energie"],
+                "answersB": ["quantité", "eau", "quantite"]
             }
         ],
         "nextA": 1,
