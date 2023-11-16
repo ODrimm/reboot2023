@@ -86,7 +86,7 @@
         "answers": [
             {
                 "answersA": ["cyber", "crime", "criminalité"],
-                "answersB": ["désinformation", "information", "desinformation"]
+                "answersB": ["désinformation", "information", "desinformation", "info"]
             }
         ],
         "nextA": 3,
@@ -98,7 +98,7 @@
         "answers": [
             {
                 "answersA": ["cyber", "crime", "criminalité"],
-                "answersB": ["désinformation", "information", "desinformation"]
+                "answersB": ["désinformation", "information", "desinformation", "info"]
             }
         ],
         "nextA": 2,
@@ -292,19 +292,7 @@
         "nextB": 1
     },
     {
-        "title": "branch 9 -- 1",
-        "text": "Vous avez sérieusement que ça à faire ?",
-        "answers": [
-            {
-                "answersA": [""],
-                "answersB": [""]
-            }
-        ],
-        "nextA": 1,
-        "nextB": 1
-    },
-    {
-        "title": "branch 9 -- 1",
+        "title": "branch 10 -- 1",
         "text": "...",
         "answers": [
             {
