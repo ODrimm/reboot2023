@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 @font-face {
     font-family: 'Inter', sans-serif;
 }
@@ -22,16 +21,13 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 150px;
     min-width: 20vw;
     min-height: 100vh;
 }
 
 .create {
-
     flex-shrink: 0;
     text-align: center;
-
     order: 1;
 }
 
@@ -40,16 +36,30 @@ body {
     box-sizing: border-box;
     border-radius: 9px;
     border: 1px solid #877E91;
-    background: #1C1B1C;
+    overscroll-behavior-y: 10px;
+    background: #666666;
     width: 150px;
     height: 50px;
+    align-items: center;
+    cursor: auto;
+}
+
+
+.chat-history{
+        color: #CDCED7;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #877E91;
+    background: #1C1B1C;
+    width: 13vw;
+    height: 3vh;
     align-items: center;
 }
 
 .history {
     display: flex;
     justify-content: start;
-    padding-left: 1vw;
+    padding-left: 10px;
     order: 2;
     flex-grow: 5;
     min-height: auto;
@@ -59,9 +69,11 @@ body {
     padding-top: 10px;
     display: flex;
     flex-direction: row;
-    width: 15vw;
-    justify-content: space-around;
+    width: 20vw;
+    justify-content: space-evenly;
     order: 3;
+    padding-bottom: 2vw;
+    display: flex;
 }
 
 .profil {
@@ -182,8 +194,21 @@ input[type=text] {
 }
 
 .chatItem.chatTitle {
-    height: 2.5vh;
+    height: 4vh;
     font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.chatTitle p{
+    font-size: 0.75rem;
+    opacity: 0.3;
 }
 
 #Chat {
@@ -216,8 +241,10 @@ input[type=text] {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    width: 20vw;
+    padding-left: 10px;
     justify-content: space-around;
+    min-width: 20vw;
+    align-items: center;
 }
 
 .tab {
@@ -229,6 +256,20 @@ input[type=text] {
     width: 50px;
     height: 50px;
     align-items: center;
+}
+.tab2 {
+    color: #CDCED7;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #877E91;
+    background: #1C1B1C;
+    width: 18vw;
+    height: 5vh;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    margin: 1vw;
+    font-weight: 600;
 }
 
 .logo-account{
@@ -245,14 +286,16 @@ input[type=text] {
     
 }
 
-.account{
-    padding-bottom: 2vw;
-    display: flex;
-}
-
 .name-account{
     display: flex;
     align-items: center;
+}
+
+.history{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -262,4 +305,19 @@ input[type=text] {
     .right-side{
         min-width: 100vw;
     }
+}
+
+.today{
+    color: #666666;
+    font-weight: 800;
+    margin: 1vw;
+}
+
+.body div div{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.today-history{
+    min-width: 20vw;
 }

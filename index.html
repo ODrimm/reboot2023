@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="ressources/logo.ico" type="image/x-icon">
-    <title>ChatGPT</title>
+    <title>ChatCPT</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <script defer src="script.js"></script>
@@ -18,13 +18,26 @@
                 <button class="chat-create"> + Nouveau chat </button>
             </div>
             <div class="tab">
-                <button class="tab"> <img src="ressources/Group 5.png" alt="logo of tabs"> </button>
+                <button class="tab"> <img src="ressources/Group-5.webp" alt="logo of tabs"> </button>
             </div>
         </div>
         <div class="history">
-            <div>
-                <p class="chat-history"> New Chat </p>
+            <div class="today-history">
+                <p class="today">Today</p>
+                <a href="">
+                    <button class="tab2">
+                    <img src="ressources/Vector-9.webp" alt="logo of tabs">
+                    <p style="padding-left: 10px;"> Les pinguins en guerre </p>
+                </button>
+            </a>
+            <a href="">
+                <button class="tab2">
+                    <img src="ressources/Vector-9.webp" alt="logo of tabs">
+                    <p style="padding-left: 10px;"> Crédits </p>
+           </button>
+            </a>
             </div>
+
         </div>
         <div class="account">
 
@@ -37,8 +50,13 @@
         <section id="Chat">
 
             <section class="chatItem chatTitle">
-                <img src="/ressources/logo.png" />
-                Default (GPT-3.5)
+                <section class="chatHeader">
+                    <img src="ressources/logo.webp" />
+                    Default (CPT-3.5)
+                </section>
+                <p>
+                    Ce site web est une expérience intéractive à but strictement éducationnelle.
+                </p>
             </section>
         </section>
         <section class="chatUi">
@@ -50,11 +68,11 @@
                 </section>
                 <div>
                     <button class="button-response" type="button" onclick="clickEvent()">
-                        <img src="ressources/submitIcon.png" alt="send querry" />
+                        <img src="ressources/submitIcon_1.webp" alt="send querry" />
                     </button>
                 </div>
             </form>
-            <p class="bottom-text">ChatGPT can make mistakes. Consider checking important information.</p>
+            <p class="bottom-text">ChatCPT can make mistakes. Consider checking important information.</p>
         </section>
     </div>
 
