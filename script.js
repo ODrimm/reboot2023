@@ -25,7 +25,7 @@ function clickEvent() { // When the user clicks on the submit button
 
 function chatSpeak(text) {
     let textPos = 0;
-    const interval = setInterval(chatDisplay, getRandomInt(50, 100));
+    const interval = setInterval(chatDisplay, getRandomInt(50, 80));
 
     chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
