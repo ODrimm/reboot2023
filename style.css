@@ -36,12 +36,13 @@ body {
     box-sizing: border-box;
     border-radius: 9px;
     border: 1px solid #877E91;
-    overscroll-behavior-y: 10px;
     background: #666666;
-    width: 150px;
+    width: 13vw;
     height: 50px;
-    align-items: center;
+    align-items: start;
     cursor: auto;
+    font-size: 1vw;
+    font-weight: 600;
 }
 
 
@@ -59,7 +60,6 @@ body {
 .history {
     display: flex;
     justify-content: start;
-    padding-left: 10px;
     order: 2;
     flex-grow: 5;
     min-height: auto;
@@ -67,10 +67,10 @@ body {
 
 .account {
     padding-top: 10px;
+    padding-left: 1vw;
     display: flex;
     flex-direction: row;
     width: 20vw;
-    justify-content: space-evenly;
     order: 3;
     padding-bottom: 2vw;
     display: flex;
@@ -249,16 +249,17 @@ input[type=text] {
 }
 
 .header-left {
-    padding-top: 10px;
+    padding-top: 2vh;
     display: flex;
-    flex-direction: row-reverse;
-    padding-left: 10px;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: start;
     min-width: 20vw;
+    padding-left: 1vw;
     align-items: center;
 }
 
 .tab {
+    margin-left: 2vw;
     color: #CDCED7;
     box-sizing: border-box;
     border-radius: 9px;
@@ -279,8 +280,10 @@ input[type=text] {
     display: flex;
     padding-left: 10px;
     align-items: center;
-    margin: 1vw;
-    font-weight: 600;
+    font-weight: 400;
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+    font-size: 1vw;
 }
 
 .logo-account{
@@ -294,17 +297,20 @@ input[type=text] {
     height: 60px;
     justify-content: center;
     align-items: center;
-    
+    font-size: 1.5vw;
 }
 
 .name-account{
     display: flex;
     align-items: center;
+    margin-left: 2vw;
+    font-size: 1.5vw;
 }
 
 .history{
     padding-top: 10px;
     display: flex;
+    padding-left: 1vw;
     flex-direction: column;
 
 }
@@ -321,7 +327,7 @@ input[type=text] {
 .today{
     color: #666666;
     font-weight: 800;
-    margin: 1vw;
+    margin-top: 2vw;
 }
 
 .body div div{
