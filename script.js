@@ -72,6 +72,9 @@ function searchAnswear(extracted) { // Search for keywords in the extracted text
         if (extracted.includes(data[currentQuestion].answers[0].answersA[i].toLowerCase())) {
             keywordFound = true;
             currentQuestion = currentQuestion + data[currentQuestion].nextA;
+            if(currentQuestion > 0){
+                document.getElementsByClassName("chatInfo")[0].classList.add("hidden")
+            }
             return "A";
         }
     }
@@ -81,6 +84,9 @@ function searchAnswear(extracted) { // Search for keywords in the extracted text
             if (extracted.includes(data[currentQuestion].answers[0].answersB[i].toLowerCase())) {
                 keywordFound = true;
                 currentQuestion = currentQuestion + data[currentQuestion].nextB;
+                if(currentQuestion > 0){
+                    document.getElementsByClassName("chatInfo")[0].classList.add("hidden")
+                }
                 return "B";
             }
         }

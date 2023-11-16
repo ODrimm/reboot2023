@@ -268,7 +268,7 @@
 
     {
         "title": "branch 8 -- 1",
-        "text": "Dans tout les cas, je vous invite à vous renseigner encore plus. Notre page 'Ressources' pourrais vous aider.",
+        "text": "Dans tout les cas, je t'invite à te renseigner encore plus. Notre page 'Ressources' pourrais t'aider.",
         "answers": [
             {
                 "answersA": [""],
@@ -283,7 +283,7 @@
     
     {
         "title": "branch 9 -- 1",
-        "text": "Désolé, je n'ai plus rien à vous dire",
+        "text": "Désolé, je n'ai plus rien à te dire",
         "answers": [
             {
                 "answersA": [""],
