@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 @font-face {
     font-family: 'Inter', sans-serif;
 }
@@ -39,11 +38,14 @@ body {
     box-sizing: border-box;
     border-radius: 9px;
     border: 1px solid #877E91;
-    background: #1C1B1C;
+    overscroll-behavior-y: 10px;
+    background: #666666;
     width: 150px;
     height: 50px;
     align-items: center;
+    cursor: auto;
 }
+
 
 .chat-history{
         color: #CDCED7;
@@ -269,6 +271,7 @@ input[type=text] {
     padding-left: 10px;
     align-items: center;
     margin: 1vw;
+    font-weight: 600;
 }
 
 .logo-account{
