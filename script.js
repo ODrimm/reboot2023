@@ -27,7 +27,7 @@ function chatSpeak(text) {
     let textPos = 0;
     const interval = setInterval(chatDisplay, getRandomInt(50, 100));
 
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="/ressources/logo.png" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
     function chatDisplay() { //les lettres apparaissent une par une
 
@@ -56,7 +56,7 @@ function chatSpeak(text) {
 
 function userSpeak(text) {
     //les lettres apparaissent une par une
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem"><img src="/ressources/user.png" /><section class="chatUser">' + text + "</section></section>";
+    chat.innerHTML = chat.innerHTML + '<section class="chatItem"><img src="ressources/user_1.webp" /><section class="chatUser">' + text + "</section></section>";
     const userChats = document.getElementsByClassName("chatUser");
     userChats[userChats.length - 1].scrollIntoView({ behavior: "smooth" });
 }
