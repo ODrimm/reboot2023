@@ -242,7 +242,9 @@ input[type=text] {
     display: flex;
     flex-direction: row-reverse;
     padding-left: 20px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    min-width: 20vw;
+    align-items: center;
 }
 
 .tab {
@@ -261,7 +263,7 @@ input[type=text] {
     border-radius: 9px;
     border: 1px solid #877E91;
     background: #1C1B1C;
-    width: 13vw;
+    width: 18vw;
     height: 5vh;
     display: flex;
     padding-left: 10px;
@@ -313,4 +315,8 @@ input[type=text] {
 .body div div{
     display: flex;
     justify-content: flex-start;
+}
+
+.today-history{
+    min-width: 20vw;
 }
