@@ -23,7 +23,7 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     gap: 150px;
-    min-width: 20vw;
+    min-width: 10vw;
     min-height: 100vh;
 }
 
@@ -240,7 +240,7 @@ input[type=text] {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    width: 20vw;
+padding-left: 20px;
     justify-content: space-around;
 }
 
