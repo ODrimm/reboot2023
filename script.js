@@ -52,6 +52,9 @@ function chatSpeak(text) {
             canSubmit = true;
             if(currentQuestion >= lastQuestion){
                 textSubmit.classList.add("blocked");
+                document.getElementsByClassName("button-response")[0].classList.add("blocked");
+                document.getElementsByClassName("chatUi")[0].classList.add("blockedWrapper");
+                textSubmit.placeholder = "Désolé, il semblerais que ChatCPT n'ai plus rien à vous dire"
                 console.log("blocker")
             }
         }
