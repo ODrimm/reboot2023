@@ -45,6 +45,17 @@ body {
     align-items: center;
 }
 
+.chat-history{
+        color: #CDCED7;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #877E91;
+    background: #1C1B1C;
+    width: 13vw;
+    height: 3vh;
+    align-items: center;
+}
+
 .history {
     display: flex;
     justify-content: start;
@@ -230,6 +241,19 @@ input[type=text] {
     height: 50px;
     align-items: center;
 }
+.tab2 {
+    color: #CDCED7;
+    box-sizing: border-box;
+    border-radius: 9px;
+    border: 1px solid #877E91;
+    background: #1C1B1C;
+    width: 13vw;
+    height: 5vh;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+
+}
 
 .logo-account{
     display: flex;
@@ -253,4 +277,11 @@ input[type=text] {
 .name-account{
     display: flex;
     align-items: center;
+}
+
+.history{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
