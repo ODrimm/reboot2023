@@ -4,42 +4,47 @@
     font-family: 'Inter', sans-serif;
 }
 
-body{
+body {
     font-family: Inter;
     background: #343541;
     color: white;
 }
-h1{
-    text-align: center;
-    text-decoration: underline;   
-}
-footer{
+
+h1 {
     text-align: center;
 }
 
-a{
-    text-decoration: none;
-    color: white;
-}
-div{
+footer {
     text-align: center;
 }
-.box{
+
+a {
+    color: white;
+}
+
+div {
+    text-align: center;
+}
+
+.box {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: dimgray;
     border-radius: 9px;
-    border: 1px solid #877E91;
     gap: 2rem;
     padding: 3rem;
-    margin: 5rem;
-    margin-top: 10rem;
+    margin: 1rem;
 }
-img{
+
+img {
     max-width: 150px;
     height: 150px;
 }
-.text{
+
+.text {
     font-size: 12px;
+}
+
+p {
+    line-height: 1.3rem;
 }
