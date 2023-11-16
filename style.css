@@ -182,7 +182,7 @@ input[type=text] {
 }
 
 .chatItem.chatTitle {
-    height: 2.5vh;
+    height: 4vh;
     font-size: 0.9rem;
     flex-direction: column;
     align-items: center;
