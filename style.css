@@ -2,6 +2,9 @@
 
 @font-face {
     font-family: 'Inter', sans-serif;
+    src: url('font/Inter-ExtraBold.woff2') format('woff2');
+    src: url('font/Inter-Regular.woff2') format('woff2');
+    src: url('font/Inter-SemiBold.woff2') format('woff2');
 }
 
 
