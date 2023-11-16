@@ -59,7 +59,7 @@ body {
 .history {
     display: flex;
     justify-content: start;
-    padding-left: 1vw;
+    padding-left: 10px;
     order: 2;
     flex-grow: 5;
     min-height: auto;
@@ -241,8 +241,8 @@ input[type=text] {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    padding-left: 20px;
-    justify-content: space-evenly;
+    padding-left: 10px;
+    justify-content: space-around;
     min-width: 20vw;
     align-items: center;
 }
