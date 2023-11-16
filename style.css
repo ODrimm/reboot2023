@@ -16,6 +16,7 @@ html {
 
 body {
     display: flex;
+    height: 100vh;
 }
 
 .left-side {
@@ -216,6 +217,8 @@ input[type=text] {
 .chatTitle p {
     font-size: 0.75rem;
     opacity: 0.3;
+    width: 80%;
+    text-align: center;
 }
 
 #Chat {
