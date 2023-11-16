@@ -17,8 +17,10 @@ body {
 .left-side {
     background-color: #202123;
     color: #CDCED7;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(7, 2.5vw) auto;
+    grid-template-rows: 1vh 5vh 1vh auto 70vh auto;
+    gap: 0.5rem;
     justify-content: space-between;
     align-items: flex-start;
     min-width: 20vw;
@@ -36,7 +38,6 @@ body {
     box-sizing: border-box;
     border-radius: 9px;
     border: 1px solid #877E91;
-    overscroll-behavior-y: 10px;
     background: #666666;
     width: 150px;
     height: 50px;
@@ -67,13 +68,9 @@ body {
 
 .account {
     padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-    width: 20vw;
-    justify-content: space-evenly;
     order: 3;
+    display: grid;
     padding-bottom: 2vw;
-    display: flex;
 }
 
 .profil {
@@ -239,10 +236,7 @@ input[type=text] {
 }
 
 .header-left {
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row-reverse;
-    padding-left: 10px;
+
     justify-content: space-around;
     min-width: 20vw;
     align-items: center;
@@ -259,6 +253,9 @@ input[type=text] {
     align-items: center;
 }
 .tab2 {
+    display: grid;
+    grid-column-start: 1;
+    grid-row-start: 3;
     color: #CDCED7;
     box-sizing: border-box;
     border-radius: 9px;
@@ -269,11 +266,13 @@ input[type=text] {
     display: flex;
     padding-left: 10px;
     align-items: center;
-    margin: 1vw;
     font-weight: 600;
 }
 
 .logo-account{
+
+    grid-column: 1;
+    grid-row: 6;
     display: flex;
     color: #000000;
     box-sizing: border-box;
@@ -284,10 +283,11 @@ input[type=text] {
     height: 60px;
     justify-content: center;
     align-items: center;
-    
 }
 
 .name-account{
+    grid-column-start: 4;
+    grid-column-end: 8;
     display: flex;
     align-items: center;
 }
