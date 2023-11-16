@@ -33,7 +33,7 @@
         "answers": [
             {
                 "answersA": ["522", "cinq cent vingt deux"],
-                "answersB": [" "]
+                "answersB": [""]
             }
         ],
         "nextA": 2,

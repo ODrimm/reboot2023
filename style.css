@@ -213,6 +213,7 @@ input[type=text] {
 }
 
 #Chat {
+    position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -223,6 +224,13 @@ input[type=text] {
 
 #Chat::-webkit-scrollbar {
     display: none;
+}
+
+.chatBackground{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%)  translateY(-50%);
 }
 
 .formWrapper{
@@ -321,4 +329,8 @@ input[type=text] {
 
 .today-history{
     min-width: 20vw;
+}
+
+a{
+    text-decoration: none;
 }
