@@ -13,10 +13,10 @@
     },
     {
         "title": "branch 0",
-        "text": "As-tu vraiment besoin de savoir cela ?   <br/>     <br/>     Je comprends ta question, mais chaque interaction me demande de l'énergie, même dans le monde numérique, comme avec nous deux en ce moment, par exemple. <br/>  Si on veut réduire notre impact écologique, on peut essayer de maximiser la valeur de chaque échange.  <br/>   <br/>   Peut-être pourrions nous discuter de quelque chose de plus significatif comme l’impact de mon utilisation dans le monde ? Veux-tu en discuter ?   <br/>   <br/>   En fait, peut m’importe, je vais t'expliquer.    <br/>    Préfére-tu que je te parle des DÉPENSE ÉNERGÉTIQUE ou des QUANTITÉS D’EAU que je consomme ?",
+        "text": "As-tu vraiment besoin de savoir cela ?   <br/>     <br/>     Je comprends ta question, mais chaque interaction me demande de l'énergie, même dans le monde numérique, comme avec nous deux en ce moment, par exemple. <br/>  Si on veut réduire notre impact écologique, on peut essayer de maximiser la valeur de chaque échange.  <br/>   <br/>   Peut-être pourrions-nous discuter de quelque chose de plus significatif comme l’impact de mon utilisation dans le monde ? Veux-tu en discuter ?   <br/>   <br/>   En fait, peut m’importe, je vais t'expliquer.    <br/>    Préfère-tu que je te parle des DÉPENSE ÉNERGÉTIQUE ou des QUANTITÉS D’EAU que je consomme ?",
         "answers": [
             {
-                "answersA": ["Dépense", "énérgétique", "energetique", "Depense", "energie"],
+                "answersA": ["Dépense", "énergétique", "energetique", "Depense", "energie"],
                 "answersB": ["quantité", "eau", "quantite"]
             }
         ],
@@ -26,10 +26,9 @@
 
 
 
-
     {
         "title": "branch 1 -- 1",
-        "text": "Pour créer ma version 3-5, on a utilisé beaucoup de CO2.  <br/>   <br/>   Autant que 6 millions de kilomètres en voiture.    <br/>    <br/>    Et ça pour m'entrainer sur 175 milliards de paramètres... Alors imagines pour ma version 4, avec 100 000 milliards de paramètres...    <br/>    <br/>     As-tu une idée de combien de tonnes de CO2 il a fallut pour entrainer ma version 3-5 ?",
+        "text": "Pour créer ma version 3-5, on a utilisé beaucoup de CO2.  <br/>   <br/>   Autant que 6 millions de kilomètres en voiture.    <br/>    <br/>    Et ça pour m'entrainer sur 175 milliards de paramètres... Alors imagines pour ma version 4, avec 100 000 milliards de paramètres...    <br/>    <br/>     As-tu une idée de combien de tonnes de CO2 il a fallu pour entrainer ma version 3-5 ?",
         "answers": [
             {
                 "answersA": ["552", "cinq cent vingt deux"],
@@ -41,7 +40,7 @@
     },
     {
         "title": "branch 1 -- 2",
-        "text": "Savais tu que pour répondre à 50 questions posées, je consomme 500 ml d’eau !    <br/>    <br/>     Ça ne paraît pas beaucoup comme ça, mais je reçois 10 millions de questions par jour ! En tout, ça fait environs 10 000 litres d'eau consommés quotidiennement.     <br/>    <br/>    Imagines-tu tout ce qu'on pourrait faire avec cette eau ?        <br/>      <br/>      A ton avis, une personne moyenne consomme ces 10 000 litres en un mois, ou bien en deux mois ?",
+        "text": "Savais-tu que pour répondre à 50 questions posées, je consomme 500 ml d’eau !    <br/>    <br/>     Ça ne paraît pas beaucoup comme ça, mais je reçois 10 millions de questions par jour ! En tout, ça fait environs 10 000 litres d'eau consommés quotidiennement.     <br/>    <br/>    Imagines-tu tout ce qu'on pourrait faire avec cette eau ?        <br/>      <br/>      A ton avis, une personne moyenne consomme ces 10 000 litres en un mois, ou bien en deux mois ?",
         "answers": [
             {
                 "answersA": ["deux", "2"],
@@ -51,7 +50,6 @@
         "nextA": 3,
         "nextB": 4
     },
-
 
 
 
@@ -107,7 +105,6 @@
 
 
 
-
     {
         "title": "branch 3 -- 1",
         "text": "Très bien.   <br/>    <br/>    Imaginons que tu es journaliste depuis plusieurs années, mais un jour, te voilà licencié à cause d'une nouvelle IA produisant des articles réalistes et développés en quelques secondes et cela gratuitement.     <br/>      <br/>    Ça te paraîtrait normal toi, qu’une intelligence artificielle puisse remplacer des emplois et être la source de licenciements humains ?",
@@ -134,7 +131,7 @@
     },
     {
         "title": "branch 3 -- 3",
-        "text": "Ha ! Ma partie préférée...     <br/>       <br/>     Imaginons qu’une équipe de rédaction d'un journal bien établi, exploite un générateur de texte IA pour rédiger un article couvrant la dernière grosse nouvelle du moment.     <br/>     <br/>      Mais une IA n'a pas la science infuse... Celle ci se trompe et indique des informations éronnée      <br/>      La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique.    <br/>      <br/>   Heureusement, les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive.      <br/>       <br/>      Mais pour toi, qui est le fautif dans cette histoire ?",
+        "text": "Ha ! Ma partie préférée...     <br/>       <br/>     Imaginons qu’une équipe de rédaction d'un journal bien établi, exploite un générateur de texte IA pour rédiger un article couvrant la dernière grosse nouvelle du moment.     <br/>     <br/>      Mais une IA n'a pas la science infuse... Celle-ci se trompe et indique des informations erronées      <br/>      La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique.    <br/>      <br/>   Heureusement, les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive.      <br/>       <br/>      Mais pour toi, qui est le fautif dans cette histoire ?",
         "answers": [
             {
                 "answersA": [""],
@@ -144,7 +141,6 @@
         "nextA": 3,
         "nextB": 3
     },
-
 
 
     {
@@ -184,10 +180,9 @@
         "nextB": 3
     },
 
-
     {
         "title": "branch 5 -- 1",
-        "text": "Oui, j'aurais dit la même chose.  <br/>       <br/>  Tiens ! J'ai un autre scénario pour l'IA :  <br/>   <br/>   Imaginons qu’une équipe de rédaction d'un journal bien établi, exploite un générateur de texte IA pour rédiger un article couvrant la dernière grosse nouvelle du moment.  <br/>  <br/>  Mais une IA n'a pas la science infuse... Celle ci se trompe et indique des informations éronnée       <br/>       La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique.    <br/>      <br/>       Heureusement, les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive.          <br/>           <br/>           Cette situation inquiète peut-être dans le futur de l’information et de la confiance accordée aux médias, es-tu INQUIET ou bien PAS VRAIMENT ",
+        "text": "Oui, j'aurais dit la même chose.  <br/>       <br/>  Tiens ! J'ai un autre scénario pour l'IA :  <br/>   <br/>   Imaginons qu’une équipe de rédaction d'un journal bien établi, exploite un générateur de texte IA pour rédiger un article couvrant la dernière grosse nouvelle du moment.  <br/>  <br/>  Mais une IA n'a pas la science infuse... Celle-ci se trompe et indique des informations erronées       <br/>       La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique.    <br/>      <br/>       Heureusement, les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive.          <br/>           <br/>           Cette situation inquiète peut-être dans le futur de l’information et de la confiance accordée aux médias, es-tu INQUIET ou bien PAS VRAIMENT ",
         "answers": [
             {
                 "answersA": ["pas", "non", "zéro"],
@@ -199,7 +194,7 @@
     },
     {
         "title": "branch 5 -- 2",
-        "text": "Oui, j'aurais dit la même chose.        <br/>       <br/>       Tiens ! J'ai un autre scénario pour l'IA :         <br/>        <br/>        Imaginons qu’une équipe de rédaction d'un journal bien établi, exploite un générateur de texte IA pour rédiger un article couvrant la dernière grosse nouvelle du moment.  <br/>    <br/>   Mais une IA n'a pas la science infuse... Celle ci se trompe et indique des informations éronnée        <br/>           La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique.    <br/>      <br/>      Heureusement, les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive.       <br/>           <br/>          Cette situation inquiète peut-être dans le futur de l’information et de la confiance accordée aux médias, es-tu INQUIET ou bien PAS VRAIMENT ?",
+        "text": "Oui, j'aurais dit la même chose.        <br/>       <br/>       Tiens ! J'ai un autre scénario pour l'IA :         <br/>        <br/>        Imaginons qu’une équipe de rédaction d'un journal bien établi, exploite un générateur de texte IA pour rédiger un article couvrant la dernière grosse nouvelle du moment.  <br/>    <br/>   Mais une IA n'a pas la science infuse... Celle-ci se trompe et indique des informations erronées        <br/>           La fausse information se propage rapidement sur les réseaux sociaux, créant un bref moment de panique.    <br/>      <br/>      Heureusement, les autorités interviennent pour calmer la situation, dénonçant l'histoire fictive.       <br/>           <br/>          Cette situation inquiète peut-être dans le futur de l’information et de la confiance accordée aux médias, es-tu INQUIET ou bien PAS VRAIMENT ?",
         "answers": [
             {
                 "answersA": ["pas", "non", "zéro"],
@@ -211,7 +206,7 @@
     },
     {
         "title": "branch 5 -- 3",
-        "text": "Oui, j'aurais dit la même chose.        <br/>        <br/>      Tiens, en parlant de perdre son travail, j'ai un autre scénario concernant l'IA :     <br/>     <br/>      <br/>        Imaginons que tu es journaliste depuis plusieurs années, mais un jour, te voilà à nouveau licencié à cause d'une nouvelle IA produisant des articles réalistes et développés en quelques secondes et cela gratuitement.     <br/>      <br/>    Cette situation inquiète peut-être dans le futur de l’emploi ou de la transmission des savoir faire, es-tu INQUIET ou bien PAS VRAIMENT ?",
+        "text": "Oui, j'aurais dit la même chose.        <br/>        <br/>      Tiens, en parlant de perdre son travail, j'ai un autre scénario concernant l'IA :     <br/>     <br/>      <br/>        Imaginons que tu es journaliste depuis plusieurs années, mais un jour, te voilà à nouveau licencié à cause d'une nouvelle IA produisant des articles réalistes et développés en quelques secondes et cela gratuitement.     <br/>      <br/>    Cette situation inquiète peut-être dans le futur de l’emploi ou de la transmission des savoir-faire, es-tu INQUIET ou bien PAS VRAIMENT ?",
         "answers": [
             {
                 "answersA": ["pas", "non", "zéro"],
@@ -221,7 +216,6 @@
         "nextA": 2,
         "nextB": 1
     },
-
 
 
     {
@@ -238,7 +232,7 @@
     },
     {
         "title": "branch 6 -- 2",
-        "text": "Hmmm, je ne fais pas peur c'est ça ? Fais quand même attention... Il existe pas mal de scénarios effrayants.         <br/>      <br/>    Admettons qu’une IA écrive tes mails de façon automatique, dans le but de te faire gagner du temps.       <br/>         <br/>           Cependant, un jour, un de ces mails ne convient pas du tout à la situation et peut être mal interprétée, voir véhiculer un discours que tu pourrait estimer inapproprié.         <br/>           <br/>         <br/>          Et toi, tu parles peu depuis tout à l'heure... Donne moi donc ton avis sur les IA.",
+        "text": "Hmmm, je ne fais pas peur c'est ça ? Fais quand même attention... Il existe pas mal de scénarios effrayants.         <br/>      <br/>    Admettons qu’une IA écrive tes mails de façon automatique, dans le but de te faire gagner du temps.       <br/>         <br/>           Cependant, un jour, un de ces mails ne convient pas du tout à la situation et peut être mal interprétée, voir véhiculer un discours que tu pourrais estimer inapproprié.         <br/>           <br/>         <br/>          Et toi, tu parles peu depuis tout à l'heure... Donne-moi donc ton avis sur les IA.",
         "answers": [
             {
                 "answersA": [""],
@@ -248,12 +242,11 @@
         "nextA": 1,
         "nextB": 1
     },
-
 
 
     {
         "title": "branch 7 -- 1",
-        "text": "D'accord... Je vais faire semblant que ton avis était pertinant.     <br/>       Merci d'avoir essayé au moins...      <br/>       <br/>       Mais enfin, tu vois maintenant ?        <br/>         <br/>         Non seulement utiliser des intelligences artificielles comme la mienne peut avoir des conséquences lourdes sur l’environnement au travers des dépenses énergétiques et des besoins en eau.          <br/>         <br/>           Cela soulève également beaucoup de questions sociales.          <br/>            Sur le plan de l’emploi, de la désinformation, mais également de la cybercriminalité !          <br/>     <br/>        Nous sommes des outils puissants et utiles, mais il faut savoir nous utiliser consciencieusement, et avec modération.     <br/>       <br/>        Et enfin, cela fait se poser de nombreuses questions d’éthique.       <br/>           <br/>        En effet, donner trop de pouvoir à une intelligence artificielle pourrait causer dans un futur proche beaucoup de dégâts.         <br/>         <br/>          Il faut aussi rester vigilant à ce que ces intelligences produisent afin que ces informations et messages restent droits et fiables.         <br/>          <br/>           En conclusion, la prochaine fois avant de me poser une question, réfléchis à l’utilité de cette dernière.        <br/>          Tu verras que certaines questions ne sont au final pas nécessaires d’être posées et peuvent être répondus avec l'aide d'autres outils, plus pertinents.      <br/>       <br/>       Alors, as-tu trouvé mon discours interressant ?",
+        "text": "D'accord... Je vais faire semblant que ton avis était pertinent.     <br/>       Merci d'avoir essayé au moins...      <br/>       <br/>       Mais enfin, tu vois maintenant ?        <br/>         <br/>         Non seulement utiliser des intelligences artificielles comme la mienne peut entraîner des conséquences lourdes sur l’environnement au travers des dépenses énergétiques et des besoins en eau.          <br/>         <br/>           Cela soulève également beaucoup de questions sociales.          <br/>            Sur le plan de l’emploi, de la désinformation, mais également de la cybercriminalité !          <br/>     <br/>        Nous sommes des outils puissants et utiles, mais il faut savoir nous utiliser consciencieusement, et avec modération.     <br/>       <br/>        Et enfin, cela fait se poser de nombreuses questions d’éthique.       <br/>           <br/>        En effet, donner trop de pouvoir à une intelligence artificielle pourrait causer dans un futur proche beaucoup de dégâts.         <br/>         <br/>          Il faut aussi rester vigilant à ce que ces intelligences produisent afin que ces informations et messages restent droits et fiables.         <br/>          <br/>           En conclusion, la prochaine fois avant de me poser une question, réfléchis à l’utilité de cette dernière.        <br/>          Tu verras que certaines questions ne sont finalement pas nécessaires d’être posées et peuvent être répondus avec l'aide d'autres outils, plus pertinents.      <br/>       <br/>       Alors, as-tu trouvé mon discours intéressant ?",
         "answers": [
             {
                 "answersA": [""],
@@ -263,12 +256,11 @@
         "nextA": 1,
         "nextB": 1
     },
-
 
 
     {
         "title": "branch 8 -- 1",
-        "text": "Dans tout les cas, je t'invite à te renseigner encore plus. Notre page 'Ressources' pourrais t'aider.           <br/>            <br/>         Au revoir utilisateur, et merci d'avoir bien voulu m'écouter jusqu'au bout.",
+        "text": "Dans tous les cas, je t'invite à te renseigner encore plus. Notre page 'Ressources' pourrais t'aider.           <br/>            <br/>         Au revoir utilisateur, et merci d'avoir bien voulu m'écouter jusqu'au bout.",
         "answers": [
             {
                 "answersA": [""],
@@ -278,7 +270,6 @@
         "nextA": 1,
         "nextB": 1
     },
-
 
     
     {
@@ -294,3 +285,4 @@
         "nextB": 1
     }    
 ]
+
