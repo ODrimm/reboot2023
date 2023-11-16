@@ -1,5 +1,6 @@
 let data = [];
 let currentQuestion = 0;
+let lastQuestion;
 let canSubmit = true;
 
 const chat = document.getElementById('Chat');
@@ -25,23 +26,34 @@ function clickEvent() { // When the user clicks on the submit button
 
 function chatSpeak(text) {
     let textPos = 0;
-    const interval = setInterval(chatDisplay, getRandomInt(50, 150));
+    const interval = setInterval(chatDisplay, getRandomInt(50, 80));
 
     chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section id="question' + currentQuestion + '" class="chatGPT"></section></section';
 
     function chatDisplay() { //les lettres apparaissent une par une
-
         let random = getRandomInt(textPos, textPos + 8);
         let textToAdd = text.slice(textPos, random);
         const chats = document.getElementsByClassName("chatGPT");
         const currentChat = chats[chats.length - 1];
-        currentChat.innerHTML = currentChat.innerHTML + textToAdd;
-        currentChat.scrollIntoView({ behavior: "smooth" });
+        if (textToAdd.includes("<") || textToAdd.includes(">")) {
+            if (textToAdd.includes("<br/>") || textToAdd.includes("<b>") || textToAdd.includes("</b>")){
+                currentChat.innerHTML = currentChat.innerHTML + textToAdd;
+                currentChat.scrollIntoView({ behavior: "smooth" });
+                textPos = random;
+            }
+        } else {
+            currentChat.innerHTML = currentChat.innerHTML + textToAdd;
+            currentChat.scrollIntoView({ behavior: "smooth" });
+            textPos = random;
+        }
 
-        textPos = random;
         if (textPos > text.length) {
             clearInterval(interval);
             canSubmit = true;
+            if(currentQuestion >= lastQuestion){
+                textSubmit.classList.add("blocked");
+                console.log("blocker")
+            }
         }
     }
 }
@@ -60,6 +72,9 @@ function searchAnswear(extracted) { // Search for keywords in the extracted text
         if (extracted.includes(data[currentQuestion].answers[0].answersA[i].toLowerCase())) {
             keywordFound = true;
             currentQuestion = currentQuestion + data[currentQuestion].nextA;
+            if(currentQuestion > 0){
+                document.getElementsByClassName("chatInfo")[0].classList.add("hidden")
+            }
             return "A";
         }
     }
@@ -69,6 +84,9 @@ function searchAnswear(extracted) { // Search for keywords in the extracted text
             if (extracted.includes(data[currentQuestion].answers[0].answersB[i].toLowerCase())) {
                 keywordFound = true;
                 currentQuestion = currentQuestion + data[currentQuestion].nextB;
+                if(currentQuestion > 0){
+                    document.getElementsByClassName("chatInfo")[0].classList.add("hidden")
+                }
                 return "B";
             }
         }
@@ -83,7 +101,7 @@ async function loadJSONData() { //Load data from JSON file
     const response = await fetch("story.json");
     const jsonData = await response.json();
     data = jsonData;
-    chat.innerHTML = chat.innerHTML + '<section class="chatItem gpt"><img src="ressources/logo.webp" /><section class="chatCPT">' + data[currentQuestion].text + "</section></section>";
+    lastQuestion = data.length - 1;
 }
 
 function getRandomInt(min, max) {
