@@ -22,7 +22,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 100px;
+    gap: 150px;
+    min-width: 20vw;
     min-height: 100vh;
 }
 
@@ -157,7 +158,7 @@ input[type=text] {
     align-content: flex-end;
     align-items: center;
     justify-content: space-between;
-    width: 90vw;
+    width: 80vw;
 }
 
 .chatUi {
@@ -182,7 +183,6 @@ input[type=text] {
     width: 2rem;
     margin-right: 1rem;
     aspect-ratio: 1;
-    background-color: white;
 }
 
 .chatItem.gpt {
@@ -193,8 +193,21 @@ input[type=text] {
 }
 
 .chatItem.chatTitle {
-    height: 2.5vh;
+    height: 4vh;
     font-size: 0.9rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chatHeader{
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.chatTitle p{
+    font-size: 0.75rem;
+    opacity: 0.3;
 }
 
 #Chat {
@@ -227,7 +240,7 @@ input[type=text] {
     padding-top: 10px;
     display: flex;
     flex-direction: row-reverse;
-    width: 15vw;
+    width: 20vw;
     justify-content: space-around;
 }
 
@@ -284,4 +297,13 @@ input[type=text] {
     display: flex;
     flex-direction: column;
 
+}
+
+@media screen and (max-width: 1000px) {
+    .left-side {
+        display: none;
+    }
+    .right-side{
+        min-width: 100vw;
+    }
 }
